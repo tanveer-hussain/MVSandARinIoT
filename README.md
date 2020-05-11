@@ -4,7 +4,7 @@
 # Notice
 The codes will be uploaded after the acceptance of the paper that is under major revision in Internet of Things Journal
 
-Some followup works on the same topic are as follows
+Some followup works on the same topic are as below:
 
 # Citation
 <pre>
