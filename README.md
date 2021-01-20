@@ -17,6 +17,10 @@ Please refer to the supplementory file pdf for details and instructions are give
 
 The activity recognition code has been implemented in MATLAB 2019a and the results indicated in the paper are based on those experiments, while the Python codes in Activity Recognition folder are used to run over resource-constrained device (Raspberry-Pi).
 
+Since video files are not playable, so I've uploaded them over Google drive, you can refer to this link: 
+
+https://drive.google.com/drive/folders/1PhxWkXyegJ0AGZFyxRQ0SGoYc-SE--4a?usp=sharing
+
 The Summarization and Activity Recognition results are separately and attached with their corresponding folders.
 
 Contact Me
