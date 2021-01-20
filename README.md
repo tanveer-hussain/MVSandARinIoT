@@ -1,6 +1,11 @@
 # MVSandARinIoT
 ### Multi-View Summarization and Activity Recognition Meet Edge Computing in IoT Environments
 
+## Paper
+Openreview [submitted to ICLR]: https://openreview.net/forum?id=HJgHUCNFPS
+Accepted in IEEE Internet of Things Journal: https://ieeexplore.ieee.org/document/9208765
+
+
 ## Notice
 Prior to the codes usage for industrial purposes or re-distribution, please read the licensing information given at the end of  <b> README file </b>
 
