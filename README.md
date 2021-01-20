@@ -7,9 +7,15 @@ Prior to the codes usage for industrial purposes or re-distribution, please read
 
 
 ## How to Run? 
-A step-wise tutorial explaining functionality of this code can be found here at links below (Part 1 and 2):
+Please refer to the supplementory file pdf for details and instructions are given in each folder with "Readme.txt" file. 
 
-Some followup works on the same topic are as below:
+The activity recognition code has been implemented in MATLAB 2019a and the results indicated in the paper are based on those results, while the Python codes are used to run over resource-constrained device (Raspberry-Pi).
+
+The Summarization and Activity Recognition results are separately and attached with corresponding folder.
+
+Contact Me
+========
+If you feel any difficulty or errors, please refer to tanveerkhattak37973[at][gmail]
 
 ## Outsourcing and Licensing
 <license>
@@ -72,12 +78,19 @@ If you are interested in Multi-view Video Summarization domain you may want to r
 </code>
 </pre>
 
-### My further research on Video Summarization (single- and multi-view video summarization) domain is as follows:
-
-
+### My further research [sorted year-wise] on Video Summarization (single- and multi-view video summarization) domain is as follows:
 #### Multi-view Video Summarization
 <pre>
 <code>
+@ARTICLE{9208765,
+  author={T. {Hussain} and K. {Muhammad} and A. {Ullah} and J. {Del Ser} and A. H. {Gandomi} and M. {Sajjad} and S. W. {Baik} and V. H. C. {de Albuquerque}},
+  journal={IEEE Internet of Things Journal}, 
+  title={Multi-View Summarization and Activity Recognition Meet Edge Computing in IoT Environments}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/JIOT.2020.3027483}}
 @article{hussain2019intelligent,
   title={Intelligent Embedded Vision for Summarization of Multiview Videos in IIoT},
   author={Hussain, Tanveer and Muhammad, Khan and Del Ser, Javier and Baik, Sung Wook and de Albuquerque, Victor Hugo C},
@@ -88,7 +101,6 @@ If you are interested in Multi-view Video Summarization domain you may want to r
   year={2019},
   publisher={IEEE}
 }
-
 @article{hussain2019cloud,
   title={Cloud-assisted multiview video summarization using CNN and bidirectional LSTM},
   author={Hussain, Tanveer and Muhammad, Khan and Ullah, Amin and Cao, Zehong and Baik, Sung Wook and de Albuquerque, Victor Hugo C},
@@ -99,7 +111,6 @@ If you are interested in Multi-view Video Summarization domain you may want to r
   year={2019},
   publisher={IEEE}
 }
-
 @article{후세인2018구조적인,
   title={구조적인 유사성에 기반한 다중 뷰 비디오의 효율적인 키프레임 추출},
   author={후세인 and 탄베르 and 칸살만 and 이미영 and 백성욱 and others},
@@ -109,7 +120,6 @@ If you are interested in Multi-view Video Summarization domain you may want to r
   pages={7--14},
   year={2018}
 }
-
 </code>
 </pre>
 
@@ -124,7 +134,6 @@ If you are interested in Multi-view Video Summarization domain you may want to r
   year={2020},
   publisher={IEEE}
 }
-
 @article{muhammad2020efficient,
   title={Efficient CNN based summarization of surveillance videos for resource-constrained devices},
   author={Muhammad, Khan and Hussain, Tanveer and Baik, Sung Wook},
@@ -134,7 +143,6 @@ If you are interested in Multi-view Video Summarization domain you may want to r
   year={2020},
   publisher={Elsevier}
 }
-
 @article{muhammad2019deepres,
   title={DeepReS: A Deep Learning-Based Video Summarization Strategy for Resource-Constrained Industrial Surveillance Scenarios},
   author={Muhammad, Khan and Hussain, Tanveer and Del Ser, Javier and Palade, Vasile and De Albuquerque, Victor Hugo C},
@@ -145,7 +153,6 @@ If you are interested in Multi-view Video Summarization domain you may want to r
   year={2019},
   publisher={IEEE}
 }
-
 @article{muhammad2019cost,
   title={Cost-effective video summarization using deep CNN with hierarchical weighted fusion for IoT surveillance networks},
   author={Muhammad, Khan and Hussain, Tanveer and Tanveer, Muhammad and Sannino, Giovanna and de Albuquerque, Victor Hugo C},
@@ -156,7 +163,6 @@ If you are interested in Multi-view Video Summarization domain you may want to r
   year={2019},
   publisher={IEEE}
 }
-
 </code>
 </pre>
 
