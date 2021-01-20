@@ -6,6 +6,10 @@ Openreview [submitted to ICLR]: https://openreview.net/forum?id=HJgHUCNFPS
 
 Accepted in IEEE Internet of Things Journal: https://ieeexplore.ieee.org/document/9208765
 
+## Demo Video
+
+https://youtu.be/Qo6SQJfaCGo
+
 
 ## Notice
 Prior to the codes usage for industrial purposes or re-distribution, please read the licensing information given at the end of  <b> README file </b>
