@@ -3,6 +3,7 @@
 
 ## Paper
 Openreview [submitted to ICLR]: https://openreview.net/forum?id=HJgHUCNFPS
+
 Accepted in IEEE Internet of Things Journal: https://ieeexplore.ieee.org/document/9208765
 
 
@@ -12,11 +13,11 @@ Prior to the codes usage for industrial purposes or re-distribution, please read
 
 
 ## How to Run? 
-Please refer to the supplementory file pdf for details and instructions are given in each folder with "Readme.txt" file. 
+Please refer to the supplementory file pdf for details and instructions are given in each folder with "Readme.txt" file relevant to each folder. 
 
-The activity recognition code has been implemented in MATLAB 2019a and the results indicated in the paper are based on those results, while the Python codes are used to run over resource-constrained device (Raspberry-Pi).
+The activity recognition code has been implemented in MATLAB 2019a and the results indicated in the paper are based on those experiments, while the Python codes in Activity Recognition folder are used to run over resource-constrained device (Raspberry-Pi).
 
-The Summarization and Activity Recognition results are separately and attached with corresponding folder.
+The Summarization and Activity Recognition results are separately and attached with their corresponding folders.
 
 Contact Me
 ========
