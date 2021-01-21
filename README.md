@@ -25,7 +25,7 @@ Since video files are not playable, so I've uploaded them over Google drive, you
 
 https://drive.google.com/drive/folders/1PhxWkXyegJ0AGZFyxRQ0SGoYc-SE--4a?usp=sharing
 
-The Summarization and Activity Recognition results are separately and attached with their corresponding folders.
+The Summarization and Activity Recognition results are separate and attached with their corresponding folders.
 
 Contact Me
 ========
