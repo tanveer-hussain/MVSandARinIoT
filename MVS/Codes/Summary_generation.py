@@ -13,7 +13,6 @@ path1 = askopenfilename(initialdir = "E:\Research\Datasets\MVS",
                         filetypes = (("Image File" , "*.avi"),("All Files","*.*"),("Image File" , "*.mp4")),
                         title = "Please choose first video")
 
-start_flag = False
 classes = 'Models/object.names'
 weights = r'D:\My Research\Video Summarization\MVS\4. ICCV\Codes\MVS\Models/yolov3.weights'
 config = 'Models/yolov3.cfg'
@@ -127,16 +126,18 @@ def main():
                     kp1 = detector.detect(frame1_v1, None)
                     kp1 , des1 = detector.compute(frame1_v1, kp1)
                     des1 = np.array(des1)
+                    des1 = cv2.resize(des1, (500,32), interpolation = cv2.INTER_AREA)
                     des1 = np.reshape(des1, (16000))
 
                     kp2 = detector.detect(frame2_v1, None)
                     kp2 , des2 = detector.compute(frame2_v1, kp2)
                     des2 = np.array(des2)
+                    des2 = cv2.resize(des2, (500,32), interpolation = cv2.INTER_AREA)
                     des2 = np.reshape(des2, (16000))
 
 
                     mi = mutual_info_score(des1,des2)
-                    if mi >= 1.7:
+                    if mi >= 3.7:
                         name = 'Keyframes-0\Keyframe-'+str(counter)+'.jpg'
                         cv2.imwrite(name,frame1_v1)
                     print ('mutual information = ' , mi, ', persons = ', persons)
