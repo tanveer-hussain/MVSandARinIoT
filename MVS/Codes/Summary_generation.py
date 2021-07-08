@@ -15,7 +15,7 @@ path1 = askopenfilename(initialdir = "E:\Research\Datasets\MVS",
 
 start_flag = False
 classes = 'Models/object.names'
-weights = 'Models/yolov3.weights'
+weights = r'D:\My Research\Video Summarization\MVS\4. ICCV\Codes\MVS\Models/yolov3.weights'
 config = 'Models/yolov3.cfg'
 
 with open(classes, 'r') as f:
@@ -29,7 +29,7 @@ net = cv2.dnn.readNet(weights, config)
 def get_output_layers(net):
 
     layer_names = net.getLayerNames()
-    
+
     output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 
     return output_layers
@@ -46,20 +46,17 @@ def draw_bounding_box(img, class_id, confidence, x, y, x_plus_w, y_plus_h):
     cv2.putText(img, label, (x-10,y-10), cv2.FONT_HERSHEY_SIMPLEX, 1, color, 2)
 
 def tinu(image):
-    start_flag = True
 
-        
-        
     Width = image.shape[1]
     Height = image.shape[0]
     scale = 0.00392
-   
-    # create input blob 
+
+    # create input blob
     blob = cv2.dnn.blobFromImage(image, scale, (416,416), (0,0,0), True, crop=False)
-    
+
     # set input blob for the network
     net.setInput(blob)
-    
+
     outs = net.forward(get_output_layers(net))
 
     # initialization
@@ -68,7 +65,7 @@ def tinu(image):
     boxes = []
     conf_threshold = 0.5
     nms_threshold = 0.4
-    
+
 
     for out in outs:
         for detection in out:
@@ -87,14 +84,14 @@ def tinu(image):
                 confidences.append(float(confidence))
                 boxes.append([x, y, w, h])
 
-    
+
     # apply non-max suppression
-    
+
     indices = cv2.dnn.NMSBoxes(boxes, confidences, conf_threshold, nms_threshold)
-    
+
 #    # go through the detections remaining
 #    # after nms and draw bounding box
-#    
+#
     for i in indices:
         i = i[0]
         box = boxes[i]
@@ -102,10 +99,10 @@ def tinu(image):
         y = box[1]
         w = box[2]
         h = box[3]
-        
+
 
         #draw_bounding_box(image, class_ids[i], confidences[i], round(x), round(y), round(x+w), round(y+h))
-        
+
     return class_ids
 
 
@@ -113,7 +110,7 @@ def main():
     counter = 0
     video1 = cv2.VideoCapture(path1)
     status_v1, frame1_v1 = video1.read()
-    
+
     total_frames = int(video1.get(cv2.CAP_PROP_FRAME_COUNT))
     while(counter < total_frames):
         status_v1 , frame2_v1 = video1.read()
@@ -122,7 +119,7 @@ def main():
         if counter%15==0:
             if status_v1 is True:
                 class_ids = tinu(frame1_v1)
-                
+
                 persons = class_ids.count(0)
 
                 if persons >= 1:
