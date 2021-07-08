@@ -1,6 +1,6 @@
 		*Files Detail*
 
-The MVS codes contain a Python file and a subfolder that has the prerequisite (model configuration) of the running code. The trained model is removed from "Models" folder because of space constraints.
+The MVS codes contain a Python file and a subfolder that has the prerequisite (model configuration) of the running code. The trained model (trained weights) is removed from "Models" folder because of space constraints and it can be downloaded from YOLO (v3 configuration) website easily.
 
 "Summary_generation.py" contains the code for summarization of multi-view videos. The same code is used over each Raspberry Pi device to extract keyframes from the corresponding input video. This file has a function call for object detection which returns the class ids by acquiring the current frame as an input.
 
