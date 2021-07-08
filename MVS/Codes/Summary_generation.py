@@ -138,7 +138,7 @@ def main():
 
                     mi = mutual_info_score(des1,des2)
                     if mi >= 3.7:
-                        name = 'Keyframes-0\Keyframe-'+str(counter)+'.jpg'
+                        name = 'Keyframes-2\Keyframe-'+str(counter)+'.jpg'
                         cv2.imwrite(name,frame1_v1)
                     print ('mutual information = ' , mi, ', persons = ', persons)
 
