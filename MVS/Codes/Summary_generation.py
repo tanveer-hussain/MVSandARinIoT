@@ -14,7 +14,7 @@ path1 = askopenfilename(initialdir = "E:\Research\Datasets\MVS",
                         title = "Please choose first video")
 
 classes = 'Models/object.names'
-weights = r'D:\My Research\Video Summarization\MVS\4. ICCV\Codes\MVS\Models/yolov3.weights'
+weights = 'yolov3.weights'
 config = 'Models/yolov3.cfg'
 
 with open(classes, 'r') as f:
@@ -137,8 +137,8 @@ def main():
 
 
                     mi = mutual_info_score(des1,des2)
-                    if mi >= 3.7:
-                        name = 'Keyframes-2\Keyframe-'+str(counter)+'.jpg'
+                    if mi >= 3.71:
+                        name = '0410_3\Keyframe-'+str(counter)+'.jpg'
                         cv2.imwrite(name,frame1_v1)
                     print ('mutual information = ' , mi, ', persons = ', persons)
 
